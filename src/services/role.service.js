@@ -1,0 +1,1 @@
+const roleSchema = require("../models/role.model")

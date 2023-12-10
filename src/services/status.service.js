@@ -1,0 +1,1 @@
+const statusSchema = require("../models/status.model")

@@ -1,0 +1,1 @@
+const registerBoxSchema = require("../models/registerBox.model")

@@ -1,0 +1,1 @@
+const companySchema = require("../models/company.model")
