@@ -5,7 +5,8 @@ const routes = Router() //Funcion routes de express
 
 const { 
    getAllCategory
-} = require("../controllers/category.controller") //requiero el 
-//las funciones del controlador
+} = require("../controllers/category.controller") 
+
+routes.get("/listCategory", getAllCategory);
 
 module.exports = routes // exportar las rutas

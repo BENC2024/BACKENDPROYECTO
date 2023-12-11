@@ -3,7 +3,15 @@ const { Router } = require("express");
 const routes = Router()
 
 const { 
-   getAllrequestExpense
+   getAllRequestExpenses,
+   getOneRequestExpense,
+   saveRequestExpense,
+   updateRequestExpense
 } = require("../controllers/requestExpense.controller") 
 
-module.exports = routes 
+routes.get("/listRequestExpense", getAllRequestExpenses);
+routes.get("/showRequestExpense/:id", getOneRequestExpense);
+routes.post("/saveRequestExpense",saveRequestExpense)
+routes.put("/updateRequestExpense/:id", updateRequestExpense);
+
+module.exports = routes

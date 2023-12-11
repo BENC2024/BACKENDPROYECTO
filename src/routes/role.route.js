@@ -6,4 +6,6 @@ const {
    getAllRole
 } = require("../controllers/role.controller") 
 
+routes.get("/listRole", getAllRole);
+
 module.exports = routes 

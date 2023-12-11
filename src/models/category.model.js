@@ -2,7 +2,11 @@ const { Schema, model } = require("mongoose")
 
 const CategorySchema = new Schema(
    {
-      nameCategory: { type: String }
+      nameCategory: {
+         type: String,
+         enum: ['Papelería','Cafetería','Transporte','Otro'],
+         required: [true, 'Obligatorio agregar categoría']
+      }
    }
 )
 

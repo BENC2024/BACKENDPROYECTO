@@ -6,4 +6,6 @@ const {
    getAllCompany
 } = require("../controllers/company.controller") 
 
+routes.get("/listCompany", getAllCompany);
+
 module.exports = routes 

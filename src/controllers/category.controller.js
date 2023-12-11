@@ -1,3 +1,10 @@
-const { listCategory } = require("../services/category.service") //trae los resultados de la funcion de servicio
+const { listCategory } = require("../services/category.service")
 
-const categoryController = { } //Un objeto
+const categoryController = { }
+
+categoryController.getAllCategory = async (req,res) => { 
+   const listCategory = await listCategory()
+   res.json(listCategory)
+};
+
+module.exports = categoryController
