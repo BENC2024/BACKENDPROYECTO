@@ -2,7 +2,7 @@ const { listRole } = require("../services/role.service")
 
 const roleController = { }
 
-roleController.getAllrole = async (req,res) => { 
+roleController.getAllRole = async (req,res) => { 
    const listRole = await listRole()
    res.json(listRole)
 };

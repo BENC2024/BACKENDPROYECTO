@@ -7,7 +7,7 @@ const {
    getOneRequestAdmin,
    saveRequestAdmin,
    updateRequestAdmin
-} = require("../controllers/registerBox.controller") 
+} = require("../controllers/requestAdmin.controller") 
 
 
 routes.get("/listRequestAdmin", getAllRequestAdmins);

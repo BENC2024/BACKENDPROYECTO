@@ -16,8 +16,8 @@ const showRequestAdmin = async (id) => {
 }
 
 const saveRequestAdmin = async (requestAdmin) => {
-   let requestAdmin = new requestAdminSchema(requestAdmin);
-   return await requestAdmin.save();
+   let requestAdm = new requestAdminSchema(requestAdmin);
+   return await requestAdm.save();
 }
 
 const updateRequestAdmin = async (requestAdmin,id) => {
