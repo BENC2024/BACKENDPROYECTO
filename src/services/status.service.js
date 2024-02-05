@@ -1,7 +1,8 @@
 const statusSchema = require("../models/status.model")
 
 const listStatus = async () => {
-   return await StatusSchema.find()
+   console.log("En el listado de estados")
+   return await statusSchema.find()
 }
 
 module.exports = { 

@@ -3,26 +3,22 @@ const { Schema, model } = require("mongoose")
 
 const CompanySchema = new Schema(
    {
-      name: {
+      nombreEmpresa: {
          type: String,
-         required: [true,'Nombre requerido']
+         required: true
       },
-      nit: {
+      direccionEmpresa: {
          type: String,
-         required: [true,'NIT requerido']
+         required: true
       },
-      phone: {
+      telefonoEmpresa: {
          type: Number,
-         required: [true,'Numero telefonico requerido']
+         required: true
       },
-      direction: {
+      emailEmpresa: {
          type: String,
-         required: [true,'Falta direccion']
-      },
-      email: {
-         type: String,
-         required: [true,'Falta correo']
-      },
+         required: true
+      }
    }
 )
 

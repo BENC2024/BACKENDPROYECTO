@@ -3,8 +3,8 @@ const { listStatus } = require("../services/status.service")
 const statusController = { } 
 
 statusController.getAllStatus = async (req,res) => { 
-   const listStatus = await listStatus()
-   res.json(listStatus)
+   const status = await listStatus()
+   res.json(status)
 };
 
 module.exports = statusController

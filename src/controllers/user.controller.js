@@ -1,11 +1,19 @@
-const { listUser } = require("../services/user.service")
+const { 
+   listUser,
+   detailUser
+} = require("../services/user.service")
 
 const userController = { }
 
 userController.getAllUser = async (req,res) => { 
-   const listUser = await listUser()
-   res.json(listUser)
+   const listadoUser = await listUser()
+   res.json(listadoUser)
 };
 
-module.exports = userController
+userController.getOneUser = async (req,res) => {
+   const { id } = req.params
+   const detalleUsuario = await detailUser(id)
+   res.json(detalleUsuario)
+}
 
+module.exports = userController

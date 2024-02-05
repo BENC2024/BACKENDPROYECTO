@@ -9,5 +9,5 @@ const CategorySchema = new Schema(
       }
    }
 )
-
-module.exports = model("category", CategorySchema, "Categoria")
+//Nombre String, Nombre del model, Nombre de la coleccion en mongo
+module.exports = model("categoria", CategorySchema, "Category")

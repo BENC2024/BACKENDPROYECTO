@@ -1,26 +1,27 @@
-const { Schema, model } = require("mongoose")
+const { Schema, model, SchemaType } = require("mongoose")
 
 const UserSchema = new Schema(
    {
-      first_name: {
-         type: String,
-         required: [true,'Nombre requerido']
+      empresaId: {
+         type: Schema.Types.ObjectId, 
+         ref: "company",
+         required: [true,'Falta id empresa']
       },
-      last_name: {
+      username: {
          type: String,
          required: [true,'Apellido requerido']
       },
-      phone: {
-         type: Number,
+      nombre: {
+         type: String,
          required: [true,'Numero requerido']
       },
-      direction: {
+      rol: {
          type: String,
          required: [true,'Falta direccion']
       },
-      role: {
-         type: Schema.Types.ObjectId, 
-         ref: "role" 
+      correo: {
+         type: String, 
+         required: [true,'Falta correo']
       }
    }
 )

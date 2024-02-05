@@ -3,7 +3,11 @@ const { Router } = require("express");
 const routes = Router()
 
 const { 
-   getAllUser
+   getAllUser,
+   getOneUser
 } = require("../controllers/user.controller") 
 
-module.exports = routes 
+routes.get("/listUser", getAllUser);
+routes.get("/detailUser/:id", getOneUser);
+
+module.exports = routes
